@@ -27,10 +27,10 @@ h1, h2, h3, h4, h5, h6, ul, ol, dd, p, address, pre, blockquote, table {
     #BASE
 \*------------------------------------*/
 /**
- * 1. Set the base element’s `font-size` to the value of your choosing. Set in
+ * 1. Set the base elementï¿½s `font-size` to the value of your choosing. Set in
  *    ems, assuming a browser default of 16px.
  * 2. Work out the unitless `line-height` for your project based around your
- *    desired `line-height` (defined previously in pixels), and your project’s
+ *    desired `line-height` (defined previously in pixels), and your projectï¿½s
  *    base font size.
  */
 /**
@@ -105,7 +105,7 @@ li > ol {
     #PARAGRAPHS
 \*------------------------------------*/
 /**
- * Not strictly a paragraph, but probably doesn’t need its own section.
+ * Not strictly a paragraph, but probably doesnï¿½t need its own section.
  */
 /*------------------------------------*\
     #CODE
@@ -135,15 +135,15 @@ blockquote {
 
 /**
  * Set up quote marks on quoting elements. This is very English-based, so we are
- * using “, ”, ‘, and ’ quotes.
+ * using ï¿½, ï¿½, ï¿½, and ï¿½ quotes.
  */
 blockquote {
-  quotes: "“" "”";
+  quotes: "ï¿½" "ï¿½";
   margin-left: 60px;
   margin-left: 3.15789rem;
 }
 blockquote p:before {
-  content: "“";
+  content: "ï¿½";
   content: open-quote;
 }
 blockquote p:after {
@@ -151,30 +151,30 @@ blockquote p:after {
   content: no-close-quote;
 }
 blockquote p:last-of-type:after {
-  content: "”";
+  content: "ï¿½";
   content: close-quote;
 }
 
 q {
-  quotes: "‘" "’" "“" "”";
+  quotes: "ï¿½" "ï¿½" "ï¿½" "ï¿½";
   /**
-   * If an element opens with an inline quote, let’s hang that.
+   * If an element opens with an inline quote, letï¿½s hang that.
    */
 }
 q:before {
-  content: "‘";
+  content: "ï¿½";
   content: open-quote;
 }
 q:after {
-  content: "’";
+  content: "ï¿½";
   content: close-quote;
 }
 q q:before {
-  content: "“";
+  content: "ï¿½";
   content: open-quote;
 }
 q q:after {
-  content: "”";
+  content: "ï¿½";
   content: close-quote;
 }
 q:first-child {
@@ -201,40 +201,40 @@ td {
 
 @font-face {
   font-family: 'VAGbold';
-  src: url("../fonts/vagrounded-bold-webfont.eot");
-  src: url("../fonts/vagrounded-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/vagrounded-bold-webfont.woff") format("woff"), url("../fonts/vagrounded-bold-webfont.ttf") format("truetype"), url("../fonts/vagrounded-bold-webfont.svg#VAGRoundedBoldRegular") format("svg");
+  src: url("fonts/vagrounded-bold-webfont.eot");
+  src: url("fonts/vagrounded-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/vagrounded-bold-webfont.woff") format("woff"), url("fonts/vagrounded-bold-webfont.ttf") format("truetype"), url("fonts/vagrounded-bold-webfont.svg#VAGRoundedBoldRegular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Comic Neue';
-  src: url("../fonts/ComicNeue-Regular.eot");
-  src: url("../fonts/ComicNeue-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ComicNeue-Regular.woff") format("woff"), url("../fonts/ComicNeue-Regular.ttf") format("truetype");
+  src: url("fonts/ComicNeue-Regular.eot");
+  src: url("fonts/ComicNeue-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/ComicNeue-Regular.woff") format("woff"), url("fonts/ComicNeue-Regular.ttf") format("truetype");
   font-weight: 300;
 }
 @font-face {
   font-family: 'Comic Neue';
-  src: url("../fonts/ComicNeue-Regular-Oblique.eot");
-  src: url("../fonts/ComicNeue-Regular-Oblique.eot?#iefix") format("embedded-opentype"), url("../fonts/ComicNeue-Regular-Oblique.woff") format("woff"), url("../fonts/ComicNeue-Regular-Oblique.ttf") format("truetype");
+  src: url("fonts/ComicNeue-Regular-Oblique.eot");
+  src: url("fonts/ComicNeue-Regular-Oblique.eot?#iefix") format("embedded-opentype"), url("fonts/ComicNeue-Regular-Oblique.woff") format("woff"), url("fonts/ComicNeue-Regular-Oblique.ttf") format("truetype");
   font-weight: 300;
   font-style: oblique;
 }
 @font-face {
   font-family: 'Comic Neue';
-  src: url("../fonts/ComicNeue-Bold.eot");
-  src: url("../fonts/ComicNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ComicNeue-Bold.woff") format("woff"), url("../fonts/ComicNeue-Bold.ttf") format("truetype");
+  src: url("fonts/ComicNeue-Bold.eot");
+  src: url("fonts/ComicNeue-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/ComicNeue-Bold.woff") format("woff"), url("fonts/ComicNeue-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 @font-face {
   font-family: 'Comic Neue';
-  src: url("../fonts/ComicNeue-Bold-Oblique.eot");
-  src: url("../fonts/ComicNeue-Bold-Oblique.eot?#iefix") format("embedded-opentype"), url("../fonts/ComicNeue-Bold-Oblique.woff") format("woff"), url("../fonts/ComicNeue-Bold-Oblique.ttf") format("truetype");
+  src: url("fonts/ComicNeue-Bold-Oblique.eot");
+  src: url("fonts/ComicNeue-Bold-Oblique.eot?#iefix") format("embedded-opentype"), url("fonts/ComicNeue-Bold-Oblique.woff") format("woff"), url("fonts/ComicNeue-Bold-Oblique.ttf") format("truetype");
   font-weight: 700;
   font-style: oblique;
 }
 @font-face {
   font-family: 'Consolas';
-  src: url("../fonts/Consolas.ttf") format("truetype");
+  src: url("fonts/Consolas.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
