@@ -1126,7 +1126,7 @@ html[lang="en-GB"] .lesson-steps h1 b, html[lang="en-GB"] .lesson-steps h1 stron
 }
 
 .check h2 {
-  background: url("check.png") left center no-repeat;
+  background: url("../img/check.png") left center no-repeat;
   background-size: 1em auto;
   color: #f5a200;
   padding-left: 1.2em;
@@ -1140,7 +1140,7 @@ html[lang="en-GB"] .lesson-steps h1 b, html[lang="en-GB"] .lesson-steps h1 stron
   padding: 0.5em 1em 1em;
 }
 .flag h2 {
-  background: url("flag.png") left center no-repeat;
+  background: url("../img/flag.png") left center no-repeat;
   background-size: 1em auto;
   color: #349946;
   padding-left: 1.2em;
