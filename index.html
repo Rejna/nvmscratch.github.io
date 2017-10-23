@@ -9,7 +9,7 @@
 
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-    <link rel="stylesheet" href="master.min.css">
+    <link rel="stylesheet" href="http://projects.codeclubworld.org/css/master.min.css">
   </head>
 
   <body class="index-template cc">
@@ -26,178 +26,178 @@
 	</section>
     
     <main class="main lesson-steps" role="main">    
-		<section id="wstep" class="level1 intro">
-			<h1>Wstęp</h1>
-			<p>W ramach tego projektu nauczysz się jak stworzyć grę, w której używa się myszki do pokierowania łodzią w kierunku wyspy.</p>
-			<div class="scratch-preview">
-			  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/63957956/?autostart=false" frameborder="0"></iframe>
-			  <img src="boat-final.png">
-			</div>
-		</section>
-		<section id="krok-1-przygotowania" class="level1 activity">
-			<h1>Krok 1: Przygotowania</h1>
-			<section id="zadania-do-wykonania" class="level2 check">
-				<h2>Zadania do wykonania</h2>
-				<ul>
-					<li><p>Otwórz projekt Scratch o nazwie 'Wyścig Łodzi'. Możesz go znaleźć na stronie <a href="http://jumpto.cc/boat-go">jumpto.cc/boat-go</a> albo pobrać go na swój komputer ze strony <a href="http://jumpto.cc/boat-get">jumpto.cc/boat-get</a>.</p></li>
-					<li><p>Projekt zawiera duszka łodzi i tło z trasą, zawierającą:</p>
-					<ul>
-						<li>Drewniane przeszkody, które łódź musi omijać</li>
-						<li>Piaszczystą wyspę, do której łódź musi dopłynąć</li>
-					<ul>
-					<p><img src="boat-starter.png" alt="screenshot" /></p></li>
-				</ul>
-			</section>
-			<section id="zapisz-swoj-projekt" class="level2 save">
-				<h2>Zapisz swój projekt</h2>
-			</section>
-		</section>
-		<section id="krok-2-sterowanie-lodzia" class="level1 activity">
-			<h1>Krok 2: Sterowanie łodzią</h1>
-			<section id="zadania-do-wykonania-1" class="level2 check">
+	<section id="wstep" class="level1 intro">
+		<h1>Wstęp</h1>
+		<p>W ramach tego projektu nauczysz się jak stworzyć grę, w której używa się myszki do pokierowania łodzią w kierunku wyspy.</p>
+		<div class="scratch-preview">
+			<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63957956/?autostart=false" frameborder="0"></iframe>
+			<img src="boat-final.png">
+		</div>
+	</section>
+	<section id="krok-1-przygotowania" class="level1 activity">
+		<h1>Krok 1: Przygotowania</h1>
+		<section id="zadania-do-wykonania" class="level2 check">
 			<h2>Zadania do wykonania</h2>
+			<ul>
+				<li><p>Otwórz projekt Scratch o nazwie 'Wyścig Łodzi'. Możesz go znaleźć na stronie <a href="http://jumpto.cc/boat-go">jumpto.cc/boat-go</a> albo pobrać go na swój komputer ze strony <a href="http://jumpto.cc/boat-get">jumpto.cc/boat-get</a>.</p></li>
+				<li><p>Projekt zawiera duszka łodzi i tło z trasą, zawierającą:</p>
 				<ul>
-					<li><p>Łodzią będziesz sterować za pomocą myszki. Dodaj ten kod do twojej łodzi:</p>
-					<p><img src="script1.png" alt="screenshot" /></p></li>
-					<li><p>Przetestuj łódź, klikając na zieloną flagę i ruszając myszką. Czy łódź płynie w kierunku wskaźnika?</p>
-					<p><img src="boat-mouse.png" alt="screenshot" /></p>
-					<p><b>Uwaga: Obecne Scratch ma błąd, który może powodować, że łódź nie będzie płynąć w stronę wskaźnika. Jeśli to ci się przydarzy, kliknij w strzałkę przy bloku <code class="blockmotion">ustaw w stronę</code> i ponownie wybierz 'wskaźnik myszy'.</b></p>
-					<p><img src="bug.png" alt="screenshot" /></p></li>
-					<li><p>Co się dzieje, kiedy łódź dotyka wskaźnika myszy?</p>
-					<p>Aby to naprawić, musisz dodać blok <code class="blockcontrol">jeżeli</code> do swojego kodu. Dzięki temu łódź będzie się poruszała tylko jeśli jest w odległości większej niż 5 pikseli od wskaźnika.</p>
-					<p><img src="script2.png" alt="screenshot" /></p></li>
-					<li><p>Ponownie przetestuj swoją łódź, żeby sprawdzić, czy problem został rozwiązany.</p>
-				</ul>
-			</section>
-			<section id="zapisz-swoj-projekt-1" class="level2 save">
-				<h2>Zapisz swój projekt</h2>
-			</section>
+					<li>Drewniane przeszkody, które łódź musi omijać</li>
+					<li>Piaszczystą wyspę, do której łódź musi dopłynąć</li>
+				<ul>
+				<p><img src="boat-starter.png" alt="screenshot" /></p></li>
+			</ul>
 		</section>
-		<section id="krok-3-zderzenia" class="level1 activity new-page">
-			<h1>Krok 3: Zderzenia!</h1>
-			<p>Twoja łódź może przepływać przez drewniane bariery. Naprawmy to!</p>
-			<section id="zadania-do-wykonania-2" class="level2 check">
-				<h2>Zadania do wykonania</h2>
-				<ul>
-					<li><p>Potrzebujesz dwóch kostiumów dla swojej łodzi, jeden normalny, drugi przedstawiający łódź po zderzeniu z przeszkodą. Zduplikuj kostium łodzi i nazwij je 'normalny' i 'zniszczony'.</p></li>
-					<li><p>Kliknij na 'zniszczony' kostium i zmień narzędzie na 'Wybierz' aby złapać kawałki łodzi i pomieszać je. Poprzesuwaj je i poprzekręcaj, ale nie zmieniaj ich rozmiarów. Spraw, aby łódź wyglądała na zniszczoną.</p>
-					<p><img src="boat-costumes.png" alt="screenshot" /></p></li>
-					<li><p>Dodaj poniższy kod do twojej łodzi, wewnątrz pętli <code class="blockcontrol">zawsze</code>, żeby rozstrzaskiwała się, jeżeli dotknie drewnianych przeszkód:</p>
-					<p><img src="script3.png" alt="screenshot" /></p>
-					<p>Ten kod jest wewnątrz pętli <code class="blockcontrol">zawsze</code>, dzięki czemu ciągle jest sprawdzane, czy łódź się rozbiła.</p></li>
-					<li><p>Powinieneś również zadbać o to, aby na początku łódź zawsze wyglądała 'normalnie'.</p></li>
-					<li><p>Jeśli teraz spróbujesz przepłynąć przez drewnianą barierię, powinieneś zauważyć, że łódź się rozbija i wraca na początek trasy.</p>
-					<p><img src="boat-no.png" alt="screenshot"/></p></li>
-				</ul>
-			</section>
-			<section id="zapisz-swoj-projekt-2" class="level2 save">
-				<h2>Zapisz swój projekt</h2>
-			</section>
-			<section id="wyzwanie-zwyciestwo" class="level2 challenge">
-				<h2>Wyzwanie: Zwycięstwo!</h2>
-				<p>Czy potrafisz dodać kolejny blok <code class="blockcontrol">jeżeli</code> do kodu twojej łodzi tak, aby gracz wygrywał, kiedy dotrze do piaszczystej wyspy?</p>
-				<p>Kiedy łódź dotrze do wyspy, powinna powiedzieć 'TAK!' i gra powinna się zatrzymać. Będziesz musiał użyć poniższego kodu:</p>
-				<p><img src="script4.png" alt="screenshot"/></p>
-				<p><img src="boat-yeah.png" alt="screenshot"/></p>
-			</section>
-			<section id="zapisz-swoj-projekt-3" class="level2 save">
-				<h2>Zapisz swój projekt</h2>
-			</section>
-			<section id="wyzwanie-dzwieki" class="level2 challenge">
-				<h2>Wyzwanie: Dźwięki</h2>
-				<p>Czy potrafisz dodać dźwięki do twojej gry, kiedy łódź się rozbija albo kiedy dociera do wyspy. Możesz nawet dodać muzykę grającą w tle (jeśli potrzebujesz pomocy, przypomnij sobie projekt 'Kapela rockowa').</p>
-			</section>
-			<section id="zapisz-swoj-projekt-4" class="level2 save">
-				<h2>Zapisz swój projekt</h2>
-			</section>
+		<section id="zapisz-swoj-projekt" class="level2 save">
+			<h2>Zapisz swój projekt</h2>
 		</section>
-		<section id="krok-4-proba-czasowa" class="level1 activity new-page">
-			<h1>Krok 4: Próba czasowa</h1>
-			<p>Dodajmy stoper do twojej gry po to, aby gracz musiał jak najszybciej dotrzeć do wyspy.</p>
-			<section id="zadania-do-wykonania-3" class="level2 check">
-				<h2>Zadania do wykonania</h2>
-				<ul>
-					<li><p>Dodaj nową zmienną o nazwie <code class="blockdata">czas</code>. Możesz także zmienić sposób wyświetlania twojej nowej zmiennej. Jeśli potrzebujesz pomocy, podejrzyj projekt 'Pogromcy duchów'.</p>
-					<p><img src="boat-time.png" alt="screenshot" /></p></li>
-					<li><p>Dodaj poniższy kod do twojej <strong>sceny</strong> tak, aby stoper odmierzał czas dopóki łódź nie dotrze do wyspy:</p>
-					<p><img src="script5.png" alt="screenshot" /></p></li>
-					<li><p>I już! Przetestuj swoją grę i sprawdź jak szybko uda ci się dostać do wyspy!</p>
-					<p><img src="boat-win.png" alt="screenshot"/></li>
-				</ul>
-			</section>
-			<section id="zapisz-swoj-projekt-5" class="level2 save">
-				<h2>Zapisz swój projekt</h2>
-			</section>
+	</section>
+	<section id="krok-2-sterowanie-lodzia" class="level1 activity">
+		<h1>Krok 2: Sterowanie łodzią</h1>
+		<section id="zadania-do-wykonania-1" class="level2 check">
+		<h2>Zadania do wykonania</h2>
+			<ul>
+				<li><p>Łodzią będziesz sterować za pomocą myszki. Dodaj ten kod do twojej łodzi:</p>
+				<p><img src="script1.png" alt="screenshot" /></p></li>
+				<li><p>Przetestuj łódź, klikając na zieloną flagę i ruszając myszką. Czy łódź płynie w kierunku wskaźnika?</p>
+				<p><img src="boat-mouse.png" alt="screenshot" /></p>
+				<p><b>Uwaga: Obecne Scratch ma błąd, który może powodować, że łódź nie będzie płynąć w stronę wskaźnika. Jeśli to ci się przydarzy, kliknij w strzałkę przy bloku <code class="blockmotion">ustaw w stronę</code> i ponownie wybierz 'wskaźnik myszy'.</b></p>
+				<p><img src="bug.png" alt="screenshot" /></p></li>
+				<li><p>Co się dzieje, kiedy łódź dotyka wskaźnika myszy?</p>
+				<p>Aby to naprawić, musisz dodać blok <code class="blockcontrol">jeżeli</code> do swojego kodu. Dzięki temu łódź będzie się poruszała tylko jeśli jest w odległości większej niż 5 pikseli od wskaźnika.</p>
+				<p><img src="script2.png" alt="screenshot" /></p></li>
+				<li><p>Ponownie przetestuj swoją łódź, żeby sprawdzić, czy problem został rozwiązany.</p>
+			</ul>
 		</section>
-		<section id="krok-5-przeszkody-i-wzmocnienia" class="level1 activity new-page">
-			<h1>Krok 5: Przeszkody i wzmocnienia</h1>
-			<p>Ta gra jest <i>za łatwa</i> - dodajmy kilka elementów, żeby zrobić ją bardziej interesującą.</p>
-			<section id="zadania-do-wykonania-4" class="level2 check">
-				<h2>Zadania do wykonania</h2>
-				<ul>
-					<li><p>Najpierw dodajmy kilka 'przyspieszaczy' do twojej gry, które będą przyspieszać łódź. Zmień tło sceny i dodaj kilka białych strzałek.</p>
-					<p><img src="boat-boosts.png" alt="screenshot" /></p></li>
-					<li><p>Teraz dodaj poniższy kod do pętli <code class="blockcontrol">zawsze</code> twojej łodzi, dzięki czemu łódź przesunie się <i>dodatkowe</i> 3 kroki, kiedy dotknie białego przyspieszacza.</p>
-					<p><img src="script6.png" alt="screenshot" /></p></li>
-					<li><p>Możesz także dodać obracającą się bramę, którą twoja łódź musi ominąć. Dodaj nowego duszka, nazwij go 'brama', powinien wyglądać mniej więcej tak:</p>
-					<p><img src="boat-gate.png" alt="screenshot" /></p>
-					<p>Upewnij się, że kolor bramy jest taki sam, jak kolor przeszkód.</p></li>
-					<li><p>Ustaw środek duszka bramy.</p>
-					<p><img src="boat-center.png" alt="screenshot" /></p></li>
-					<li><p>Dodaj kod do twojej bramy, aby <code class="blockcontrol">zawsze</code> powoli się obracała.</p></li>
-					<li><p>Przetestuj swoją grę. Na mapie powinna się znaleźć obracająca się brama, której trzeba unikać.</p>
-					<p><img src="boat-gate2.png" alt="screenshot"/></p></li>
-				</ul>
-			</section>
-			<section id="zapisz-swoj-projekt-6" class="level2 save">
-				<h2>Zapisz swój projekt</h2>
-			</section>
-			<section id="wyzwanie-zwyciestwo" class="level2 challenge">
-				<h2>Wyzwanie: Więcej przeszkód!</h2>
-				<p>Czy potrafisz dodać więcej przeszkód do twojej gry? Poniżej znajdziesz kilka pomysłów:</p>
-				<ul>
-					<li><p>Możesz dodać zieloną maź do twojego tła, która będzie spowalniać gracza, kiedy się jej dotknie. Możesz użyć bloku <code class="blockcontrol">czekaj</code>, aby to zrobić:</p>
-					<p><img src="script7.png" alt="screenshot"/></p>
-					<p><img src="boat-slime.png" alt="screenshot"/></p></li>
-					<li><p>Możesz dodać też poruszające się obiekty, np. kłodę albo rekina!</p>
-					<p><img src="boat-shark.png" alt="screenshot"/></p>
-					<p>Te bloki mogą ci w tym pomóc:</p>
-					<p><img src="script8.png" alt="screenshot"/></p>
-					<p>Jeśli twój nowy obiekt nie jest brązowy, będziesz musiał dodać poniższy kod do skryptu łodzi:</p>
-					<p><img src="script9.png" alt="screenshot"/></p></li>
-				</ul>
-			</section>
-			<section id="zapisz-swoj-projekt-7" class="level2 save">
-				<h2>Zapisz swój projekt</h2>
-			</section>
-			<section id="wyzwanie-wiecej-lodzi" class="level2 challenge">
-				<h2>Wyzwanie: Więcej łodzi!</h2>
-				<p>Czy potrafisz zmienić swoją grę w wyścig pomiędzy dwoma graczami?</p>
-				<ul>
-					<li><p>Zduplikuj łódź, nazwij ją 'Gracz 2' i zmień jej wygląd.</p>
-					<p><img src="boat2.png" alt="screenshot"/></p>
-					<li><p>Zmień pozycję startową gracza 2 poprzez zmianę tego kodu:</p>
-					<p><img src="script10.png" alt="screenshot"/></p></li>
-					<li><p>Usuń fragment kodu odpowiedzialny za sterowanie łodzią przez myszkę:</p>
-					<p><img src="script11.png" alt="screenshot"/></p>
-					<p>... i zastąp go kodem do sterowania łodzią za pomocą strzałek.</p>
-					<p>Ten kod będzie ci potrzebny do poruszania się łodzią do przodu:</p>
-					<p><img src="script12.png" alt="screenshot"/></p>
-					<p>Będziesz również potrzebować kodu, który <code class="blockmotion">obróci</code> łódź, kiedy strzałka w lewo lub w prawo zostanie wciśnięta.</p></li>
-				</ul>
-			</section>
-			<section id="zapisz-swoj-projekt-8" class="level2 save">
-				<h2>Zapisz swój projekt</h2>
-			</section>
-			<section id="wyzwanie-wiecej-poziomow" class="level2 challenge">
-				<h2>Wyzwanie: Więcej poziomów!</h2>
-				<p>Czy potrafisz stworzyć dodatkowe tła i pozwolić graczowi wybierać między poziomami?</p>
-				<p><img src="script13.png" alt="screenshot"/></p>
-			</section>
-			<section id="zapisz-swoj-projekt-9" class="level2 save">
-				<h2>Zapisz swój projekt</h2>
-			</section>
+		<section id="zapisz-swoj-projekt-1" class="level2 save">
+			<h2>Zapisz swój projekt</h2>
 		</section>
+	</section>
+	<section id="krok-3-zderzenia" class="level1 activity">
+		<h1>Krok 3: Zderzenia!</h1>
+		<p>Twoja łódź może przepływać przez drewniane bariery. Naprawmy to!</p>
+		<section id="zadania-do-wykonania-2" class="level2 check">
+			<h2>Zadania do wykonania</h2>
+			<ul>
+				<li><p>Potrzebujesz dwóch kostiumów dla swojej łodzi, jeden normalny, drugi przedstawiający łódź po zderzeniu z przeszkodą. Zduplikuj kostium łodzi i nazwij je 'normalny' i 'zniszczony'.</p></li>
+				<li><p>Kliknij na 'zniszczony' kostium i zmień narzędzie na 'Wybierz' aby złapać kawałki łodzi i pomieszać je. Poprzesuwaj je i poprzekręcaj, ale nie zmieniaj ich rozmiarów. Spraw, aby łódź wyglądała na zniszczoną.</p>
+				<p><img src="boat-costumes.png" alt="screenshot" /></p></li>
+				<li><p>Dodaj poniższy kod do twojej łodzi, wewnątrz pętli <code class="blockcontrol">zawsze</code>, żeby rozstrzaskiwała się, jeżeli dotknie drewnianych przeszkód:</p>
+				<p><img src="script3.png" alt="screenshot" /></p>
+				<p>Ten kod jest wewnątrz pętli <code class="blockcontrol">zawsze</code>, dzięki czemu ciągle jest sprawdzane, czy łódź się rozbiła.</p></li>
+				<li><p>Powinieneś również zadbać o to, aby na początku łódź zawsze wyglądała 'normalnie'.</p></li>
+				<li><p>Jeśli teraz spróbujesz przepłynąć przez drewnianą barierię, powinieneś zauważyć, że łódź się rozbija i wraca na początek trasy.</p>
+				<p><img src="boat-no.png" alt="screenshot"/></p></li>
+			</ul>
+		</section>
+		<section id="zapisz-swoj-projekt-2" class="level2 save">
+			<h2>Zapisz swój projekt</h2>
+		</section>
+		<section id="wyzwanie-zwyciestwo" class="level2 challenge">
+			<h2>Wyzwanie: Zwycięstwo!</h2>
+			<p>Czy potrafisz dodać kolejny blok <code class="blockcontrol">jeżeli</code> do kodu twojej łodzi tak, aby gracz wygrywał, kiedy dotrze do piaszczystej wyspy?</p>
+			<p>Kiedy łódź dotrze do wyspy, powinna powiedzieć 'TAK!' i gra powinna się zatrzymać. Będziesz musiał użyć poniższego kodu:</p>
+			<p><img src="script4.png" alt="screenshot"/></p>
+			<p><img src="boat-yeah.png" alt="screenshot"/></p>
+		</section>
+		<section id="zapisz-swoj-projekt-3" class="level2 save">
+			<h2>Zapisz swój projekt</h2>
+		</section>
+		<section id="wyzwanie-dzwieki" class="level2 challenge">
+			<h2>Wyzwanie: Dźwięki</h2>
+			<p>Czy potrafisz dodać dźwięki do twojej gry, kiedy łódź się rozbija albo kiedy dociera do wyspy. Możesz nawet dodać muzykę grającą w tle (jeśli potrzebujesz pomocy, przypomnij sobie projekt 'Kapela rockowa').</p>
+		</section>
+		<section id="zapisz-swoj-projekt-4" class="level2 save">
+			<h2>Zapisz swój projekt</h2>
+		</section>
+	</section>
+	<section id="krok-4-proba-czasowa" class="level1 activity">
+		<h1>Krok 4: Próba czasowa</h1>
+		<p>Dodajmy stoper do twojej gry po to, aby gracz musiał jak najszybciej dotrzeć do wyspy.</p>
+		<section id="zadania-do-wykonania-3" class="level2 check">
+			<h2>Zadania do wykonania</h2>
+			<ul>
+				<li><p>Dodaj nową zmienną o nazwie <code class="blockdata">czas</code>. Możesz także zmienić sposób wyświetlania twojej nowej zmiennej. Jeśli potrzebujesz pomocy, podejrzyj projekt 'Pogromcy duchów'.</p>
+				<p><img src="boat-time.png" alt="screenshot" /></p></li>
+				<li><p>Dodaj poniższy kod do twojej <strong>sceny</strong> tak, aby stoper odmierzał czas dopóki łódź nie dotrze do wyspy:</p>
+				<p><img src="script5.png" alt="screenshot" /></p></li>
+				<li><p>I już! Przetestuj swoją grę i sprawdź jak szybko uda ci się dostać do wyspy!</p>
+				<p><img src="boat-win.png" alt="screenshot"/></li>
+			</ul>
+		</section>
+		<section id="zapisz-swoj-projekt-5" class="level2 save">
+			<h2>Zapisz swój projekt</h2>
+		</section>
+	</section>
+	<section id="krok-5-przeszkody-i-wzmocnienia" class="level1 activity">
+		<h1>Krok 5: Przeszkody i wzmocnienia</h1>
+		<p>Ta gra jest <i>za łatwa</i> - dodajmy kilka elementów, żeby zrobić ją bardziej interesującą.</p>
+		<section id="zadania-do-wykonania-4" class="level2 check">
+			<h2>Zadania do wykonania</h2>
+			<ul>
+				<li><p>Najpierw dodajmy kilka 'przyspieszaczy' do twojej gry, które będą przyspieszać łódź. Zmień tło sceny i dodaj kilka białych strzałek.</p>
+				<p><img src="boat-boosts.png" alt="screenshot" /></p></li>
+				<li><p>Teraz dodaj poniższy kod do pętli <code class="blockcontrol">zawsze</code> twojej łodzi, dzięki czemu łódź przesunie się <i>dodatkowe</i> 3 kroki, kiedy dotknie białego przyspieszacza.</p>
+				<p><img src="script6.png" alt="screenshot" /></p></li>
+				<li><p>Możesz także dodać obracającą się bramę, którą twoja łódź musi ominąć. Dodaj nowego duszka, nazwij go 'brama', powinien wyglądać mniej więcej tak:</p>
+				<p><img src="boat-gate.png" alt="screenshot" /></p>
+				<p>Upewnij się, że kolor bramy jest taki sam, jak kolor przeszkód.</p></li>
+				<li><p>Ustaw środek duszka bramy.</p>
+				<p><img src="boat-center.png" alt="screenshot" /></p></li>
+				<li><p>Dodaj kod do twojej bramy, aby <code class="blockcontrol">zawsze</code> powoli się obracała.</p></li>
+				<li><p>Przetestuj swoją grę. Na mapie powinna się znaleźć obracająca się brama, której trzeba unikać.</p>
+				<p><img src="boat-gate2.png" alt="screenshot"/></p></li>
+			</ul>
+		</section>
+		<section id="zapisz-swoj-projekt-6" class="level2 save">
+			<h2>Zapisz swój projekt</h2>
+		</section>
+		<section id="wyzwanie-zwyciestwo" class="level2 challenge">
+			<h2>Wyzwanie: Więcej przeszkód!</h2>
+			<p>Czy potrafisz dodać więcej przeszkód do twojej gry? Poniżej znajdziesz kilka pomysłów:</p>
+			<ul>
+				<li><p>Możesz dodać zieloną maź do twojego tła, która będzie spowalniać gracza, kiedy się jej dotknie. Możesz użyć bloku <code class="blockcontrol">czekaj</code>, aby to zrobić:</p>
+				<p><img src="script7.png" alt="screenshot"/></p>
+				<p><img src="boat-slime.png" alt="screenshot"/></p></li>
+				<li><p>Możesz dodać też poruszające się obiekty, np. kłodę albo rekina!</p>
+				<p><img src="boat-shark.png" alt="screenshot"/></p>
+				<p>Te bloki mogą ci w tym pomóc:</p>
+				<p><img src="script8.png" alt="screenshot"/></p>
+				<p>Jeśli twój nowy obiekt nie jest brązowy, będziesz musiał dodać poniższy kod do skryptu łodzi:</p>
+				<p><img src="script9.png" alt="screenshot"/></p></li>
+			</ul>
+		</section>
+		<section id="zapisz-swoj-projekt-7" class="level2 save">
+			<h2>Zapisz swój projekt</h2>
+		</section>
+		<section id="wyzwanie-wiecej-lodzi" class="level2 challenge">
+			<h2>Wyzwanie: Więcej łodzi!</h2>
+			<p>Czy potrafisz zmienić swoją grę w wyścig pomiędzy dwoma graczami?</p>
+			<ul>
+				<li><p>Zduplikuj łódź, nazwij ją 'Gracz 2' i zmień jej wygląd.</p>
+				<p><img src="boat2.png" alt="screenshot"/></p>
+				<li><p>Zmień pozycję startową gracza 2 poprzez zmianę tego kodu:</p>
+				<p><img src="script10.png" alt="screenshot"/></p></li>
+				<li><p>Usuń fragment kodu odpowiedzialny za sterowanie łodzią przez myszkę:</p>
+				<p><img src="script11.png" alt="screenshot"/></p>
+				<p>... i zastąp go kodem do sterowania łodzią za pomocą strzałek.</p>
+				<p>Ten kod będzie ci potrzebny do poruszania się łodzią do przodu:</p>
+				<p><img src="script12.png" alt="screenshot"/></p>
+				<p>Będziesz również potrzebować kodu, który <code class="blockmotion">obróci</code> łódź, kiedy strzałka w lewo lub w prawo zostanie wciśnięta.</p></li>
+			</ul>
+		</section>
+		<section id="zapisz-swoj-projekt-8" class="level2 save">
+			<h2>Zapisz swój projekt</h2>
+		</section>
+		<section id="wyzwanie-wiecej-poziomow" class="level2 challenge">
+			<h2>Wyzwanie: Więcej poziomów!</h2>
+			<p>Czy potrafisz stworzyć dodatkowe tła i pozwolić graczowi wybierać między poziomami?</p>
+			<p><img src="script13.png" alt="screenshot"/></p>
+		</section>
+		<section id="zapisz-swoj-projekt-9" class="level2 save">
+			<h2>Zapisz swój projekt</h2>
+		</section>
+	</section>
     </main>
 
     <aside class="legal-notice copyright">
@@ -207,22 +207,22 @@
 
     <div id="legend">
         <div>
-            <img src="../../../img/check.png" alt="Zadania do wykonania" />
+            <img src="check.png" alt="Zadania do wykonania" />
             <div class="caption"><span class="check_text">Zadania do wykonania</span></div>
             <div class="description">Wykonaj te <span class="check_text upper">polecenia</span> krok po kroku</div>
         </div>
         <div>
-          <img src="../../../img/flag.png" alt="Przetestuj swój projekt" />
+          <img src="flag.png" alt="Przetestuj swój projekt" />
           <div class="caption"><span class="flag_text">Przetestuj swój projekt</span></div>
           <div class="description">Kliknij na zieloną flagę, aby <span class="flag_text upper">przetestować</span> swój kod</div>
         </div>
         <div>
-          <img src="../../../img/save.png" alt="Zapisz swój projekt" />
+          <img src="save.png" alt="Zapisz swój projekt" />
           <div class="caption"><span class="save_text">Zapisz swój projekt</span></div>
           <div class="description">Teraz <span class="save_text upper">zapisz</span> swój projekt</div>
         </div>
     </div>
 
-    <script type="text/javascript" src="../../../js/lesson.js"></script>
+    <script type="text/javascript" src="lesson.js"></script>
   </body>
 </html>
