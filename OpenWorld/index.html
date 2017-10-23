@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Wyścigi łodzi — Code Club World Projects</title>
+    <title>Otwarty Świat — Code Club World Projects</title>
     <link rel="shortcut icon" href="http://projects.codeclubworld.org/img/cc_favicon.ico">
 
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -15,11 +15,11 @@
   <body class="index-template cc">
     <header class="header" role="banner">
       <a class="home-link" href="http://projects.codeclubworld.org/index.html"><img alt="" class="logo" height="100" src="img/cc_logo.png"></a>
-      <h1 class="title">Wyścigi łodzi</h1>
+      <h1 class="title">Otwarty świat</h1>
       <span class="level-indicator">Scratch 1</span>
     </header>
 
-    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="http://projects.codeclubworld.org/index.html">Języki</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="http://projects.codeclubworld.org/pl-PL/index.html">Polski</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="http://projects.codeclubworld.org/pl-PL/01_scratch_01/index.html">Scratch 1</a></li><li class="breadcrumbs-item current">Wyścigi łodzi</li></ul></nav>
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="http://projects.codeclubworld.org/index.html">Języki</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="http://projects.codeclubworld.org/pl-PL/index.html">Polski</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="http://projects.codeclubworld.org/pl-PL/01_scratch_01/index.html">Scratch 2</a></li><li class="breadcrumbs-item current">Otwarty świat</li></ul></nav>
 
 	<section class="note registration-note">
 		<p>Każdy Klub Kodowania <u>musi być zarejestrowany</u>. Zarejestrowane kluby można zobaczyć na mapie na stronie <a href="http://www.codeclubworld.org/">codeclubworld.org</a> - jeżeli nie ma tam twojego klubu sprawdź na stronie <a href="http://jumpto.cc/18CpLPy">jumpto.cc/18CpLPy</a> (ang.) co trzeba zrobić, by to zmienić.</p>
@@ -28,101 +28,125 @@
     <main class="main lesson-steps" role="main">    
 	<section id="wstep" class="level1 intro">
 		<h1>Wstęp</h1>
-		<p>W ramach tego projektu nauczysz się jak stworzyć grę, w której używa się myszki do pokierowania łodzią w kierunku wyspy.</p>
+		<p>W ramach tego projektu nauczysz się jak stworzyć grę przygodową z otwartym światem.</p>
 		<div class="scratch-preview">
-			<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63957956/?autostart=false" frameborder="0"></iframe>
-			<img src="img/boat-final.png">
+			<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34248822/?autostart=false" frameborder="0"></iframe>
+			<img src="img/world-final.png">
 		</div>
 	</section>
-	<section id="krok-1-przygotowania" class="level1 activity">
-		<h1>Krok 1: Przygotowania</h1>
+	<section id="krok-1-programowanie-gracza" class="level1 activity">
+		<h1>Krok 1: Programowanie gracza</h1>
 		<section id="zadania-do-wykonania" class="level2 check">
 			<h2>Zadania do wykonania</h2>
 			<ul>
-				<li><p>Otwórz projekt Scratch o nazwie 'Wyścig Łodzi'. Możesz go znaleźć na stronie <a href="http://jumpto.cc/boat-go">jumpto.cc/boat-go</a> albo pobrać go na swój komputer ze strony <a href="http://jumpto.cc/boat-get">jumpto.cc/boat-get</a>.</p></li>
-				<li><p>Projekt zawiera duszka łodzi i tło z trasą, zawierającą:</p>
-				<ul>
-					<li>Drewniane przeszkody, które łódź musi omijać</li>
-					<li>Piaszczystą wyspę, do której łódź musi dopłynąć</li>
-				<ul>
-				<p><img src="img/boat-starter.png" alt="screenshot" /></p></li>
+				<li><p>Otwórz projekt Scratch o nazwie 'Otwarty świat'. Możesz go znaleźć na stronie <a href="http://jumpto.cc/world-go">jumpto.cc/world-go</a> albo pobrać go na swój komputer ze strony <a href="http://jumpto.cc/world-get">jumpto.cc/world-get</a>.</p>
+				<p><img src="img/world-starter.png" alt="screenshot" /></p></li>
+				<li><p>Gracz będzie sterował swoją postacią za pomocą strzałek. Kiedy gracz wciśnie strzałkę do góry, chcemy, żeby postać poruszyła się do góry. Żeby to osiągnąć, trzeba zmienić współrzędną y postaci. Dodaj poniższy kod do duszka <code>gracz</code>:</p>
+				<p><img src="img/script1.png" /></p></li>
+				<li><p>Aby przetestować postać, kliknij zieloną flagę i przytrzymaj strzałkę w górę. Czy postać porusza się do góry?</p>
+				<p><img src="img/world-up.png"/></p></li>
+				<li><p>Aby grasz mógł poruszać się w lewo, należy dodać kolejny blok <code class="blockcontrol">jeżeli</code> to duszka gracza, który będzie zmieniał współrzędną x:</p>
+				<p><img src="img/script2.png"/></p></li>
 			</ul>
+		</section>
+		<section id="wyzwanie-cztery-strony" class="level2 challenge">
+			<h2>Wyzwanie: Poruszanie się we wszystkie cztery strony</h2>
+			<p>Czy potrafisz dodać kod do duszka gracza, który sprawi, że będzie mógł poruszać się w górę, w dół, w lewo i w prawo? Spróbuj użyć kodu, który już masz!</p>
+		</section>
+		<section id="zapisz-swoj-projekt" class="level2 save">
+			<h2>Zapisz swój projekt</h2>
+		</section>
+		<section>
+			<ul>
+				<li><p>Ponownie przetestuj swoją postać. Zauważ, że może ona przechodzić przez szare ściany.</p>
+				<p><img src="img/walls.png"/></p></li>
+				<li><p>Aby to naprawić, postać powinna się poruszać, ale cofać się, kiedy dotyka szarej ściany. Poniżej znajdziesz przydatny kod:</p>
+				<p><img src="img/script3.png"/></p>
+				<p>Zauważ, że nowy blok <code class="blockcontrol">jeżeli</code><code class="blocksensing">dotyka koloru</code> znajduje się <i>wewnątrz</i> bloku <code class="blockcontrol">jeżeli</code><code class="blocksensing">klawisz [strzałka w górę]</code></p></li>
+				<li><p>Przetestuj nowy kod. Przesuń się pod ścianę - nie powinieneś móc w nią wejść.</p>
+				<p><img src="img/world-walls-test.png"/></p></li>
+				<li><p>Zróbmy to samo dla strzałki w lewo, cofajmy gracza, jeżeli dotyka ściany. Kod gracza powinien wyglądać mniej więcej tak:</p>
+				<p><img src="img/script4.png"/></p></li>
+			</ul>
+		</section>
+		<section id="wyzwanie-popraw-poruszanie" class="level2 challenge">
+			<h2>Wyzwanie: Naprawa ruchu gracza</h2>
+			<p>Dodaj kod do duszka gracza tak, aby nie mógł przechodzić przez ściany z żadnej strony. Użyj kodu, który już masz!</p>
 		</section>
 		<section id="zapisz-swoj-projekt" class="level2 save">
 			<h2>Zapisz swój projekt</h2>
 		</section>
 	</section>
-	<section id="krok-2-sterowanie-lodzia" class="level1 activity">
-		<h1>Krok 2: Sterowanie łodzią</h1>
+	<section id="krok-2-programowanie-swiata" class="level1 activity">
+		<h1>Krok 2: Programowanie świata</h1>
+		<p>Pozwólmy graczowy przechodzić przez drzwi do innych pomieszczeń!</p>
 		<section id="zadania-do-wykonania-1" class="level2 check">
-		<h2>Zadania do wykonania</h2>
+			<h2>Zadania do wykonania</h2>
 			<ul>
-				<li><p>Łodzią będziesz sterować za pomocą myszki. Dodaj ten kod do twojej łodzi:</p>
-				<p><img src="img/script1.png" alt="screenshot" /></p></li>
-				<li><p>Przetestuj łódź, klikając na zieloną flagę i ruszając myszką. Czy łódź płynie w kierunku wskaźnika?</p>
-				<p><img src="img/boat-mouse.png" alt="screenshot" /></p>
-				<p><b>Uwaga: Obecne Scratch ma błąd, który może powodować, że łódź nie będzie płynąć w stronę wskaźnika. Jeśli to ci się przydarzy, kliknij w strzałkę przy bloku <br /><code class="blockmotion">ustaw w stronę</code> i ponownie wybierz 'wskaźnik myszy'.</b></p>
-				<p><img src="img/bug.png" alt="screenshot" /></p></li>
-				<li><p>Co się dzieje, kiedy łódź dotyka wskaźnika myszy?</p>
-				<p>Aby to naprawić, musisz dodać blok <code class="blockcontrol">jeżeli</code> do swojego kodu. Dzięki temu łódź będzie się poruszała tylko jeśli jest w odległości większej niż 5 pikseli od wskaźnika.</p>
-				<p><img src="img/script2.png" alt="screenshot" /></p></li>
-				<li><p>Ponownie przetestuj swoją łódź, żeby sprawdzić, czy problem został rozwiązany.</p>
+				<li><p>Plik projektu zawiera gotowe tła z dodatkowymi pomieszczeniami:</p>
+				<p><img src="img/rooms.png"/></p></li>
+				<li><p>Będziesz potrzebować nowej zmiennej 'dla wszystkich duszków'. Nazwij ją <code class="blockdata">pokój</code>. Będzie ona wskazywać, gdzie obecnie znajduje się gracz.</p>
+				<p><img src="img/room.png"/></p></li>
+				<li><p>Kiedy gracz dotknie pomarańczowych drzwi w pierwszym pokoju, tło powinno zmienić się na następne, a gracz powinien ponownie przemieścić się na lewą stronę sceny. Poniżej znajdziesz potrzebny kod - umieść go wewnątrz pętli <code class="blockcontrol">zawsze</code> gracza:</p>
+				<p><img src="img/script5.png"/></p></li>
+				<li><p>Dodaj poniższy kod na <i>początku</i> kodu gracza (przed pętlą <code class="blockcontrol">zawsze</code>). Dzięki temu za każdym razem, kiedy wciśniemy zieloną flagę, wszystko wróci do stanu początkowego:</p>
+				<p><img src="img/script6.png"/></p></li>
+				<li><p>Kliknij flagę i przejdź graczem przez pomarańczowe drzwi. Czy gracz przeniósł się na następny ekran? Czy zmienna <code class="blockdata">pokój</code> zmieniła się na 2?</p>
+				<p><img src="img/room2.png"/></p></li>
 			</ul>
+		</section>
+		<section id="wyzwanie-powrot" class="level2 challenge">
+			<h2>Wyzwanie: Powrót do poprzedniego pokoju</h2>
+			<p>Czy potrafisz sprawić, żeby gracz cofał się do poprzedniego pokoju, kiedy trafi na żółte drzwi? Pamiętaj, że ten kod będzie <i>bardzo</i> podobny do kodu, który już masz (odpowiada za przenoszenie się do następnego pokoju).</p>
 		</section>
 		<section id="zapisz-swoj-projekt-1" class="level2 save">
 			<h2>Zapisz swój projekt</h2>
 		</section>
 	</section>
-	<section id="krok-3-zderzenia" class="level1 activity">
-		<h1>Krok 3: Zderzenia!</h1>
-		<p>Twoja łódź może przepływać przez drewniane bariery. Naprawmy to!</p>
+	<section id="krok-3-znaki" class="level1 activity">
+		<h1>Krok 3: Znaki</h1>
+		<p>Dodajmy znaki do twojego świata, aby pomagały graczowi w jego wędrówce.</p>
 		<section id="zadania-do-wykonania-2" class="level2 check">
 			<h2>Zadania do wykonania</h2>
 			<ul>
-				<li><p>Potrzebujesz dwóch kostiumów dla swojej łodzi, jeden normalny, drugi przedstawiający łódź po zderzeniu z przeszkodą. Zduplikuj kostium łodzi i nazwij je 'normalny' i 'zniszczony'.</p></li>
-				<li><p>Kliknij na 'zniszczony' kostium i zmień narzędzie na 'Wybierz' aby złapać kawałki łodzi i pomieszać je. Poprzesuwaj je i poprzekręcaj, ale nie zmieniaj ich rozmiarów. Spraw, aby łódź wyglądała na zniszczoną.</p>
-				<p><img src="img/boat-costumes.png" alt="screenshot" /></p></li>
-				<li><p>Dodaj poniższy kod do twojej łodzi, wewnątrz pętli <code class="blockcontrol">zawsze</code>, żeby rozstrzaskiwała się, jeżeli dotknie drewnianych przeszkód:</p>
-				<p><img src="img/script3.png" alt="screenshot" /></p>
-				<p>Ten kod jest wewnątrz pętli <code class="blockcontrol">zawsze</code>, dzięki czemu ciągle jest sprawdzane, czy łódź się rozbiła.</p></li>
-				<li><p>Powinieneś również zadbać o to, aby na początku łódź zawsze wyglądała 'normalnie'.</p></li>
-				<li><p>Jeśli teraz spróbujesz przepłynąć przez drewnianą barierię, powinieneś zauważyć, że łódź się rozbija i wraca na początek trasy.</p>
-				<p><img src="img/boat-no.png" alt="screenshot"/></p></li>
+				<li><p>Projekt zawiera już duszka znaku powitalnego:</p>
+				<p><img src="img/sign.png"/></p></li>
+				<li><p>Ten znak powinien być widoczny tylko w pokoju 1. Dodajmy zatem do niego kod, który sprawi, że tak będzie:</p>
+				<p><img src="img/script7.png"/></p></li>
+				<li><p>Przetestuj znak, przechodząc między pokojami. Znak powinien być widoczny tylko w pierwszym pokoju.</p>
+				<p><img src="img/sign2.png"/></p></li>
+				<li><p>Znak jest na nic, jeżeli nic nie mówi! Dodaj trochę kodu (w oddzielnym bloku), wyświetlającego wiadomość, kiedy gracz dotknie znaku:</p>
+				<p><img src="img/script8.png"/></p></li>
+				<li><p>Przetestuj znak. Powinieneś zobaczyć wiadomość, kiedy gracz dotknie znaku:</p>
+				<p><img src="img/sign-test.png"/></p></li>
 			</ul>
 		</section>
 		<section id="zapisz-swoj-projekt-2" class="level2 save">
 			<h2>Zapisz swój projekt</h2>
 		</section>
-		<section id="wyzwanie-zwyciestwo" class="level2 challenge">
-			<h2>Wyzwanie: Zwycięstwo!</h2>
-			<p>Czy potrafisz dodać kolejny blok <code class="blockcontrol">jeżeli</code> do kodu twojej łodzi tak, aby gracz wygrywał, kiedy dotrze do piaszczystej wyspy?</p>
-			<p>Kiedy łódź dotrze do wyspy, powinna powiedzieć 'TAK!' i gra powinna się zatrzymać. Będziesz musiał użyć poniższego kodu:</p>
-			<p><img src="img/script4.png" alt="screenshot"/></p>
-			<p><img src="img/boat-yeah.png" alt="screenshot"/></p>
+		<section id="wyzwanie-skarb" class="level2 challenge">
+			<h2>Wyzwanie: Skarb!</h2>
+			<p>Kliknij prawym przyciskiem myszy na duszka skrzyni i wybierz 'pokaż'.</p>
+			<p>Czy potrafisz sprawić, żeby skrznia ze skarbem pojawiała się tylko w pokoju 3 i mówiła "Dobra robota!", kiedy gracz jej dotknie?</p>
+			<p><img src="img/treasure.png" alt="screenshot"/></p>
 		</section>
 		<section id="zapisz-swoj-projekt-3" class="level2 save">
 			<h2>Zapisz swój projekt</h2>
 		</section>
-		<section id="wyzwanie-dzwieki" class="level2 challenge">
-			<h2>Wyzwanie: Dźwięki</h2>
-			<p>Czy potrafisz dodać dźwięki do twojej gry, kiedy łódź się rozbija albo kiedy dociera do wyspy. Możesz nawet dodać muzykę grającą w tle (jeśli potrzebujesz pomocy, przypomnij sobie projekt 'Kapela rockowa').</p>
-		</section>
-		<section id="zapisz-swoj-projekt-4" class="level2 save">
-			<h2>Zapisz swój projekt</h2>
-		</section>
 	</section>
-	<section id="krok-4-proba-czasowa" class="level1 activity">
-		<h1>Krok 4: Próba czasowa</h1>
-		<p>Dodajmy stoper do twojej gry po to, aby gracz musiał jak najszybciej dotrzeć do wyspy.</p>
+	<section id="krok-4-ludzie" class="level1 activity">
+		<h1>Krok 4: Ludzie</h1>
+		<p>Dodajmy innych ludzi do twojego świata, z którymi gracz mógłby rozmawiać.</p>
 		<section id="zadania-do-wykonania-3" class="level2 check">
 			<h2>Zadania do wykonania</h2>
 			<ul>
-				<li><p>Dodaj nową zmienną o nazwie <code class="blockdata">czas</code>. Możesz także zmienić sposób wyświetlania twojej nowej zmiennej. Jeśli potrzebujesz pomocy, podejrzyj projekt 'Pogromcy duchów'.</p>
-				<p><img src="img/boat-time.png" alt="screenshot" /></p></li>
-				<li><p>Dodaj poniższy kod do twojej <strong>sceny</strong> tak, aby stoper odmierzał czas dopóki łódź nie dotrze do wyspy:</p>
-				<p><img src="img/script5.png" alt="screenshot" /></p></li>
-				<li><p>I już! Przetestuj swoją grę i sprawdź jak szybko uda ci się dostać do wyspy!</p>
-				<p><img src="img/boat-win.png" alt="screenshot"/></li>
+				<li><p>Dodaj ten kod do duszka osoby, tak, aby mogła ona rozmawiać z graczem. Ten kod jest bardzo podobny do tego, który dodałeś do znaku:</p>
+				<p><img src="img/script9.png" alt="screenshot" /></p></li>
+				<li><p>Możesz także sprawić, żeby ta osoba poruszała się, używając tych dwóch bloków:</p>
+				<p><img src="img/script10.png"/></p>
+				<p>Twoja osoba będzie zachowywać się inaczej, w zależności od tego, czy umieścisz ten kod wewnątrz pętli <code class="blockcontrol">zawsze</code> czy węwnątrz bloku <code class="blockcontrol">jeżeli</code>. Spróbuj obu opcji i wybierz tę, która bardziej ci pasuje.</p>
+				<p><img src="img/person-test.png"/></p></li>
+				<li><p></p></li>
 			</ul>
 		</section>
 		<section id="zapisz-swoj-projekt-5" class="level2 save">
