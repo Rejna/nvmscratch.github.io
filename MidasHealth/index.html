@@ -44,7 +44,7 @@
       
       function setDate() {
         const days = document.querySelector("#days");
-        days.innerHTML = daysBetween(new Date(2018, 11, 4), new Date()).toLocaleString('en-GB');
+        days.innerHTML = daysBetween(new Date(2018, 11, 13, 10, 13, 0, 0), new Date()).toLocaleString('en-GB');
       }
       setInterval(setDate, 1000);
       setDate();
