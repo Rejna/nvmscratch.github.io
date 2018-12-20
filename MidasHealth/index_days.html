@@ -24,12 +24,15 @@
     <div class="main">
       <span class="line" style="padding-top:40px;">Midas hasn't crashed for</span><br />
       <span id="days" class="days"></span><br />
-      <span class="line">days</span>
+      <span class="line" id="daysText">days</span><br />
+      <span class="line">
+        <input type="button" id="reset" value="Reset"  style="font-size:50px;margin-top:75px;"/>
+      </span>
     </div>
     <script lang="text/javascript">
       function daysBetween(date1, date2 ) {
         //Get 1 day in milliseconds
-        var one_day=24*3600*1000;
+        var one_day=1000*3600*24;
 
         // Convert both dates to milliseconds
         var date1_ms = date1.getTime();
@@ -42,13 +45,22 @@
         return Math.round(difference_ms/one_day); 
       }
       
+      function setCrashDate() {
+        localStorage.setItem('crashDate', new Date());
+      }
+
+      document.querySelector('#reset').addEventListener('click', setCrashDate);
+
       function setDate() {
         const days = document.querySelector("#days");
-        days.innerHTML = daysBetween(new Date(2018, 11, 13, 10, 13, 0, 0), new Date()).toLocaleString('en-GB');
+        const daysText = document.querySelector("#daysText");
+        const crash = new Date(localStorage.getItem('crashDate'));
+
+        days.innerHTML = daysBetween(crash, new Date()).toLocaleString('en-GB');
+        daysText.innerHTML = days.innerHTML == "1" ? "day" : "days";
       }
       setInterval(setDate, 1000);
-      setDate();
-
+      setDate();    
     </script>
   </body>
 </html>

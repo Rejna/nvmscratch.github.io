@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="cc" lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midas Health</title>
+    <style>
+      .line {
+        display:inline-block;
+        width:100%;
+        text-align:center;
+        font-size:120px;
+      }
+      .days {
+        display:inline-block;
+        width:100%;
+        text-align:center;
+        font-size:300px;
+        color: red;
+      }
+      .box {
+        text-align:center;
+        font-size:240px;
+        color: red;
+        padding-left:50px;
+      }
+      .box2 {
+        text-align:center;
+        font-size:120px;
+        padding-left:50px;
+      }
+      .cont {
+        width:100%;
+        text-align:center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <span class="line" style="padding-top:40px;">Midas hasn't crashed for</span><br />
+
+        <table class="cont">
+          <tr>
+            <td id="days" class="box">7</td>
+            <td id="hours" class="box">8</td>
+            <td id="minutes" class="box">23</td>
+            <td id="seconds" class="box">25</td>
+          </tr>
+          <tr>
+            <td id="daysText" class="box2">days</td>
+            <td id="hoursText" class="box2">hours</td>
+            <td id="minutesText" class="box2">minutes</td>
+            <td id="secondsText" class="box2">seconds</td>
+          </tr>
+        </table>
+
+      <span class="line">
+        <input type="button" id="reset" value="Reset"  style="font-size:50px;margin-top:75px;"/>
+        <input type="button" id="reset2" value="Reset2"  style="font-size:50px;margin-top:75px;"/>
+      </span>
+    </div>
+    <script lang="text/javascript">
+      function daysBetween(date1, date2) {
+        //Get 1 day in milliseconds
+        //var one_day=24*3600*1000;
+
+        // Convert both dates to milliseconds
+        var date1_ms = date1.getTime();
+        var date2_ms = date2.getTime();
+
+        // Calculate the difference in milliseconds
+        var difference_ms = date2_ms - date1_ms;
+          
+        // Convert back to days and return
+        return Math.round(difference_ms); 
+      }
+      
+      function setDate() {
+        const days = document.querySelector("#days");
+        const hours = document.querySelector("#hours");
+        const minutes = document.querySelector("#minutes");
+        const seconds = document.querySelector("#seconds");
+
+        const daysText = document.querySelector("#daysText");
+        const hoursText = document.querySelector("#hoursText");
+        const minutesText = document.querySelector("#minutesText");
+        const secondsText = document.querySelector("#secondsText");
+
+        const crashDate = new Date(localStorage.getItem('crashDate')).getTime();
+        const now = new Date().getTime();
+
+        var delta = Math.abs(crashDate - now) / 1000;
+        var day = Math.floor(delta / 86400);
+        delta -= day * 86400;
+
+        var hour = Math.floor(delta / 3600) % 24;
+        delta -= hour * 3600;
+
+        var minute = Math.floor(delta / 60) % 60;
+        delta -= minute * 60;
+
+        var second = Math.floor(delta % 60);
+
+        days.innerHTML = day;
+        hours.innerHTML = hour;
+        minutes.innerHTML = minute;
+        seconds.innerHTML = second;
+
+        daysText.innerHTML = day == 1 ? "day" : "days";
+        hoursText.innerHTML = hour == 1 ? "hour" : "hours";
+        minutesText.innerHTML = minute == 1 ? "minute" : "minutes";
+        secondsText.innerHTML = second == 1 ? "second" : "seconds";
+      }
+      
+      function setCrashDate() {
+        localStorage.setItem('crashDate', new Date());
+      }
+
+      function setCrashDate2() {
+        localStorage.setItem('crashDate', new Date(2018, 11, 13, 10, 13, 0, 0));
+      }
+
+      document.querySelector('#reset').addEventListener('click', setCrashDate);
+      document.querySelector('#reset2').addEventListener('click', setCrashDate2);
+      
+      setInterval(setDate, 1000);
+      setDate();
+
+    </script>
+  </body>
+</html>
